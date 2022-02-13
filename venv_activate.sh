@@ -9,3 +9,4 @@ source "$SCRIPTDIR/venv_config.sh" || exit 1
 # Activate environment
 #
 source "$VENV_DIR/bin/activate" || exit 1
+

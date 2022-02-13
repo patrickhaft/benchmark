@@ -28,4 +28,9 @@ echo "Setting up path '$BINDIR'"
 
 export PATH="$PATH:$BINDIR"
 
+
+export BENCHMARK_PATH_ORIG="$PATH"
+
+export BENCHMARK_PATH="$PATH"
+
 source "$SCRIPTDIR/venv_activate.sh"

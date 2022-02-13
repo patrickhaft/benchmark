@@ -16,8 +16,11 @@ PIP_PACKAGES="matplotlib"
 echo "Installing PIP packages: $PIP_PACKAGES"
 pip3 install -U $PIP_PACKAGES  || exit 1
 
+
+
+
+
 echo "Setting up developer mode"
-cd libbenchmark_src || exit 1
 python3 ./setup.py develop || exit 1
 
 
