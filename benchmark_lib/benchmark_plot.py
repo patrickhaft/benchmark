@@ -92,10 +92,10 @@ def plot(config, plot_name, current_plot_dict, x_plot_variable):
     #     plot_dict_for_num_steps(config, x_plot_variable, time_dict, ax, ps, key)
 
     plt.xlabel(x_plot_variable)
-    plt.ylabel("Tuples micro seconds")
-    plt.legend()
+    plt.ylabel("Tuples per micro seconds")
+    plt.legend(loc='upper left')
     plt.tight_layout()
-    # plt.savefig('plot_num_steps_' + str(num_steps), bbox_inches='tight')
+    plt.savefig(plot_name)
     plt.show()
 
 

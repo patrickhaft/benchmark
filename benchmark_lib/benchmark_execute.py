@@ -12,7 +12,7 @@ def execute_for_plot(config, plot_name, plot_config):
             executable_path = get_run_dir(plot_name, graph_config["graph_name"], run_config)
             executable_path = executable_path.replace(" ", "\\ ")
             execute_parameters = ""
-            for parameter, value in config["default_parameter"].items():
+            for parameter, value in graph_config["default_parameter"].items():
                 execute_parameters += " " + str(value)
             for parameter, value in run_config.items():
                 execute_parameters += " " + str(value)
